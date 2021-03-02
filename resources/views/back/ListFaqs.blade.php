@@ -8,9 +8,9 @@
     <meta name="description" content="multikart">
     <meta name="keywords" content="multikart">
     <meta name="author" content="multikart">
-    <link rel="icon" href="{{asset('images/favicon/5.png')}}" type="image/x-icon">
-    <link rel="shortcut icon" href="{{asset('images/favicon/5.png')}}" type="image/x-icon">
-    <title>Multikart - Multi-purpopse E-commerce Html Template</title>
+    <link rel="icon" href="{{asset('images/favicon/icon1.png')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{asset('images/favicon/icon1.png')}}" type="image/x-icon">
+    <title>Administrateur</title>
 
     <!--Google font-->
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
@@ -50,6 +50,7 @@
     </div>
 
 
+    <div class="page-body">
 
 
         <div class="container-fluid">

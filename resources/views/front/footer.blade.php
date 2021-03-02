@@ -1,21 +1,5 @@
 <footer class="footer-light">
-        <div class="light-layout">
-            <div class="container">
-                <section class="small-section border-section border-top-0">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="subscribe">
-                                <div>
-                                    <h4>KNOW IT ALL FIRST!</h4>
-                                    <p>Never Miss Anything From Multikart By Signing Up To Our Newsletter.</p>
-                                </div>
-                            </div>
-                        </div>
-             
-                    </div>
-                </section>
-            </div>
-        </div>
+
         <section class="section-b-space light-layout">
             <div class="container">
                 <div class="row footer-theme partition-f">
@@ -24,7 +8,7 @@
                             <h4>about</h4>
                         </div>
                         <div class="footer-contant">
-                            <div class="footer-logo"><img src="{{asset('images/icon/logo/1.png')}}" alt=""></div>
+                            <div class="footer-logo"><img src="{{asset('images/icon/test.png')}}" alt="" style="width:300px;"></div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
                             <div class="footer-social">
                                 <ul>

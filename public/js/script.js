@@ -1269,7 +1269,6 @@ $(function() {
 
 
 /*=====================
- 23. theme-setting
  ==========================*/
 function openSetting() {
     document.getElementById("setting_box").classList.add('open-setting');

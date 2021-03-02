@@ -8,9 +8,9 @@
     <meta name="description" content="multikart">
     <meta name="keywords" content="multikart">
     <meta name="author" content="multikart">
-    <link rel="icon" href="{{asset('images/favicon/5.png')}}" type="image/x-icon">
-    <link rel="shortcut icon" href="{{asset('images/favicon/5.png')}}" type="image/x-icon">
-    <title>Multikart - Multi-purpopse E-commerce Html Template</title>
+    <link rel="icon" href="{{asset('images/favicon/icon1.png')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{asset('images/favicon/icon1.png')}}" type="image/x-icon">
+    <title>FLORA MOBLIE</title>
 
     <!--Google font-->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
@@ -25,18 +25,16 @@
     <!-- Animate icon -->
     <link rel="stylesheet" type="text/css" href="{{asset('css/animate.css')}}">
 
-    <!-- Themify icon -->
     <link rel="stylesheet" type="text/css" href="{{asset('css/themify-icons.css')}}">
 
     <!-- Bootstrap css -->
     <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.css')}}">
 
-    <!-- Theme css -->
     <link rel="stylesheet" type="text/css" href="{{asset('css/color5.css')}}" media="screen" id="color">
 
 </head>
 
-<body>
+<body class="dark">
 
     <!-- loader start -->
     

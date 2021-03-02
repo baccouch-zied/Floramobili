@@ -48,43 +48,72 @@
         <!-- Page Sidebar Start-->
         @include('back.sidbar')
     </div>
-<div>
+    <div class="page-body">
 
-    <table class="table table-bordered">
-    <tr>
-      <td scope="row">Nom</td>
-      <td>{{$produit->nom}}</td>
-    </tr>
-    <tr>
-      <th scope="row">Prix</th>
-      <td>{{$produit->prix}}</td>
-
-    </tr>
-    <tr>
-      <th scope="row">Description</th>
-      <td>{{$produit->description}}</td>
-
-    </tr>
-    <tr>
-      <th scope="row">Url</th>
-      <td>{{$produit->url}}</td>
-
-    </tr>
-    <tr>
-      <th scope="row">Images</th>
-      <td><img src="{{ URL::to('/') }}/images/{{ $produit->image }}" class="img-thumbnail" width="75" />
-                                    <img src="{{ URL::to('/') }}/images/{{ $produit->image1 }}" class="img-thumbnail" width="75" />
-                                    <img src="{{ URL::to('/') }}/images/{{ $produit->image2 }}" class="img-thumbnail" width="75" />
-                                    <img src="{{ URL::to('/') }}/images/{{ $produit->image3 }}" class="img-thumbnail" width="75" /></td>
-
-    </tr>
-    <tr>
-      <th scope="row">Id-Categorie</th>
-      <td>{{$produit->categorie_id}}</td>
-
-    </tr>
-    </table>
+<!-- Container-fluid starts-->
+<div class="container-fluid">
+    <div class="page-header">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="page-header-left">
+                    <h3>Details produit
+                        <small>Administrateur</small>
+                    </h3>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <ol class="breadcrumb pull-right">
+                    <li class="breadcrumb-item"><a href="index.html"><i data-feather="home"></i></a></li>
+                    <li class="breadcrumb-item">Gestion produits</li>
+                    <li class="breadcrumb-item active">Detail produit</li>
+                </ol>
+            </div>
+        </div>
     </div>
+</div>
+<!-- Container-fluid Ends-->
+
+<!-- Container-fluid starts-->
+<div class="container-fluid">
+    <div class="card">
+        <div class="row product-page-main card-body">
+            <div class="col-xl-4">
+ <table>
+ <tr>
+ <td><img src="{{ URL::to('/') }}/images/{{ $produit->image }}" class="img-thumbnail" width="200" />
+                                    <img src="{{ URL::to('/') }}/images/{{ $produit->image1 }}" class="img-thumbnail" width="200" />
+                               </td>
+
+ </tr>
+
+ <td><img src="{{ URL::to('/') }}/images/{{ $produit->image2 }}" class="img-thumbnail" width="200" />
+                                    <img src="{{ URL::to('/') }}/images/{{ $produit->image3 }}" class="img-thumbnail" width="200" />
+                               </td>
+
+ </tr>
+ </table>
+            </div>
+            <div class="col-xl-8">
+                <div class="product-page-details product-right mb-0">
+                    <h2>{{$produit->nom}}</h2>
+                <h4>Categorie id : {{$produit->categorie_id}}<h4>
+                <h3>{{$produit->url}}<h3>
+
+                    <hr>
+                    <h6 class="product-title">Details produit</h6>
+                    <p>{{$produit->description}}</p>
+                    <div class="product-price digits mt-2">
+                        <h3>{{$produit->prix}}</h3>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Container-fluid Ends-->
+
+</div>
 
 
 

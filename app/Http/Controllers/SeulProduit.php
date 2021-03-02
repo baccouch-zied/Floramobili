@@ -14,15 +14,14 @@ class SeulProduit extends Controller
     {
       $produits= produit::orderBy('created_at','desc')->paginate(4);
       $categorie= categorie::orderBy('created_at','desc')->paginate(3);
-
       return view('front.produit',compact(['produits','categorie']));
 
     }
 
     public function affProduit($id)
     {
-      $produits = DB::table('produits')->where('id' ,'=' ,$id)->get();
+      $produit = DB::table('produits')->where('id' ,'=' ,$id)->get();
       $categorie= categorie::all();
-      return view('front.produit',compact('produits'));
+      return view('front.produit',compact(['produit','categorie']));
     }
 }

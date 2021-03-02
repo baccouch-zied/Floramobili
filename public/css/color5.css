@@ -23,7 +23,6 @@
 /* 8. Banner Timer CSS  */
 /* 9. Category CSS */
 /* 10. Product Box CSS */
-/* 11. Theme tab CSS */
 /* 12. Banner CSS */
 /* 13. Collection Banner CSS */
 /* 14. Product-box slider CSS */
@@ -336,10 +335,10 @@ button {
 
 .btn-solid {
   padding: 13px 29px;
-  color: #ffffff;
+  color: #EAD26E;
   letter-spacing: 0.05em;
-  border: 2px solid var(--theme-deafult);
-  background-image: linear-gradient(30deg, var(--theme-deafult) 50%, transparent 50%);
+  border: 2px solid #EAD26E;
+  background-image: linear-gradient(30deg, #EAD26E 50%, transparent 50%);
   background-size: 850px;
   background-repeat: no-repeat;
   background-position: 0;
@@ -348,7 +347,7 @@ button {
   .btn-solid:hover {
     background-position: 100%;
     color: #000000;
-    background-color: #ffffff; }
+    background-color: #EAD26E; }
   .btn-solid.black-btn {
     background-image: linear-gradient(30deg, #222222 50%, transparent 50%);
     border: 2px solid #222222; }
@@ -461,7 +460,7 @@ button.btn.btn-solid:active, button.btn.btn-outline:active {
       position: absolute;
       height: 5px;
       width: 70px;
-      background-color: var(--theme-deafult);
+      background-color: #EAD26E;
       content: "";
       left: 0;
       right: 0;
@@ -3653,7 +3652,7 @@ header {
   .full-banner .banner-contain h2 {
     font-size: 100px;
     font-weight: 700;
-    color: var(--theme-deafult);
+    color: #EAD26E;
     text-transform: uppercase;
     margin-top: -15px; }
   .full-banner .banner-contain h3 {
@@ -3915,7 +3914,7 @@ header {
     color: #222222;
     margin-bottom: 0; }
   .banner-furniture .collection-banner .contain-banner.banner-3 h4 {
-    color: var(--theme-deafult); }
+    color: #EAD26E; }
 
 .banner-goggles .collection-banner .contain-banner.banner-3 h2 {
   color: #222222; }
@@ -7746,7 +7745,7 @@ footer {
         text-transform: uppercase;
         padding-top: 5px;
         font-weight: 600;
-        color: #ff4c3b; }
+        color: #EAD26E; }
     .contact-page .contact-right ul li p {
       font-weight: 600;
       margin-bottom: 0;
@@ -10315,7 +10314,7 @@ footer {
   display: none;
   color: #fff;
   text-align: center;
-  background: var(--theme-deafult);
+  background: #EAD26E;
   border: none;
   font-size: 22px;
   padding: 7px;
@@ -12308,7 +12307,7 @@ body.rtl {
     28.Dark CSS start
 ==========================*/
 body.dark {
-  background-color: #2b2b2b;
+  background-color: #000000;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: #cfd4da; }
@@ -12341,18 +12340,18 @@ body.dark {
   color: #cbcbcb; }
 
 .dark .page-link {
-  background-color: #2b2b2b;
+  background-color: #000000;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   border-color: #404040; }
 
 .dark .breadcrumb-section {
-  background-color: #232323;
+  background-color: #3d3b3b;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
 
 .dark .light-layout {
-  background-color: #232323;
+  background-color: #000000;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
 
@@ -12377,7 +12376,7 @@ body.dark {
   transition: all 0.3s ease; }
 
 .dark header {
-  background-color: #2b2b2b;
+  background-color: #000000;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
   .dark header.header-5 .pixelstrap a, .dark header.header-5 .pixelstrap:hover, .dark header.header-5 .pixelstrap:active {
@@ -12442,7 +12441,7 @@ body.dark {
   transition: all 0.3s ease; }
 
 .dark .sub-footer {
-  background-color: #2b2b2b;
+  background-color: #000000;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
 
@@ -12483,9 +12482,8 @@ body.dark {
   -webkit-box-shadow: 0 0 1px 0 #2b2b2b;
           box-shadow: 0 0 1px 0 #2b2b2b; }
 
-.dark .onhover-div > div img {
-  -webkit-filter: brightness(100);
-          filter: brightness(100); }
+
+        SSS
 
 .dark .onhover-div .show-div {
   background-color: #232323;
@@ -12587,14 +12585,14 @@ body.dark {
   color: #cbcbcb; }
 
 .dark .onhover-dropdown .onhover-show-div {
-  background-color: #232323;
+  background-color: #000000;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   -webkit-box-shadow: none;
           box-shadow: none; }
 
 .dark .testimonial {
-  background-color: #232323;
+  background-color: #000000;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
   .dark .testimonial .testimonial-slider .slick-track .slick-slide:nth-child(even) .media {
@@ -13037,7 +13035,7 @@ body.dark {
   transition: all 0.3s ease;
   color: #cfd4da; }
   .dark .portfolio-section .filter-button.active {
-    background-color: #ff4c3b;
+    background-color: #EAD26E;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     color: #ffffff; }
@@ -14022,7 +14020,7 @@ body.dark {
 
 .pixelstrap li .lable-nav {
   position: absolute;
-  background-color: var(--theme-deafult);
+  background-color: #EAD26E;
   padding: 2px 7px;
   color: #ffffff;
   top: 20px;

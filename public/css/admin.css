@@ -17651,7 +17651,7 @@ ul.notification-dropdown.onhover-show-div {
 /*======= Badge-color css end  ======= */
 /*======= Background-color css starts  ======= */
 .bg-primary {
-  background-color: #ff8084 !important;
+  background-color: #4d4848 !important;
   color: #ffffff; }
 
 .bg-secondary {
@@ -19185,10 +19185,9 @@ table tbody .border-bottom-warning td {
     max-width: 900px; }
     .authentication-box .container .bg-primary {
       padding: 50px;
-      background-image: url("../images/dashboard/login-bg.png");
       background-position: center;
-      -webkit-box-shadow: 1px 5px 24px 0 rgba(255, 128, 132, 0.8);
-              box-shadow: 1px 5px 24px 0 rgba(255, 128, 132, 0.8); }
+      -webkit-box-shadow: 1px 5px 24px 0 #EAD26E;
+              box-shadow: 1px 5px 24px 0 #EAD26E; }
     .authentication-box .container .form-group {
       margin-bottom: 1.5rem; }
     .authentication-box .container .svg-icon {

@@ -8,9 +8,9 @@
     <meta name="description" content="multikart">
     <meta name="keywords" content="multikart">
     <meta name="author" content="multikart">
-    <link rel="icon" href="{{asset('images/favicon/5.png')}}" type="image/x-icon">
-    <link rel="shortcut icon" href="{{asset('images/favicon/5.png')}}" type="image/x-icon">
-    <title>Multikart - Multi-purpopse E-commerce Html Template</title>
+    <link rel="icon" href="{{asset('images/favicon/icon1.png')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{asset('images/favicon/icon1.png')}}" type="image/x-icon">
+    <title>FLORA MOBLIE</title>
 
     <!--Google font-->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
@@ -25,18 +25,16 @@
     <!-- Animate icon -->
     <link rel="stylesheet" type="text/css" href="{{asset('css/animate.css')}}">
 
-    <!-- Themify icon -->
     <link rel="stylesheet" type="text/css" href="{{asset('css/themify-icons.css')}}">
 
     <!-- Bootstrap css -->
     <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.css')}}">
 
-    <!-- Theme css -->
     <link rel="stylesheet" type="text/css" href="{{asset('css/color5.css')}}" media="screen" id="color">
 
 </head>
 
-<body>
+<body class="dark">
 
     <!-- loader start -->
     
@@ -47,7 +45,25 @@
     @include('front.header')
     <!-- header end -->
 
-    <
+    <div class="breadcrumb-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="page-title">
+                        <h2>a propos</h2>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <nav aria-label="breadcrumb" class="theme-breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">accueil</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">A propos</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--Section ends-->
 
     <section class="about-page section-b-space">

@@ -8,9 +8,9 @@
     <meta name="description" content="multikart">
     <meta name="keywords" content="multikart">
     <meta name="author" content="multikart">
-    <link rel="icon" href="{{asset('images/favicon/5.png')}}" type="image/x-icon">
-    <link rel="shortcut icon" href="{{asset('images/favicon/5.png')}}" type="image/x-icon">
-    <title>Multikart - Multi-purpopse E-commerce Html Template</title>
+    <link rel="icon" href="{{asset('images/favicon/icon1.png')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{asset('images/favicon/icon1.png')}}" type="image/x-icon">
+    <title>FLORA MOBLIE</title>
 
     <!--Google font-->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
@@ -25,18 +25,16 @@
     <!-- Animate icon -->
     <link rel="stylesheet" type="text/css" href="{{asset('css/animate.css')}}">
 
-    <!-- Themify icon -->
     <link rel="stylesheet" type="text/css" href="{{asset('css/themify-icons.css')}}">
 
     <!-- Bootstrap css -->
     <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.css')}}">
 
-    <!-- Theme css -->
     <link rel="stylesheet" type="text/css" href="{{asset('css/color5.css')}}" media="screen" id="color">
 
 </head>
 
-<body>
+<body class="dark">
 
     <!-- loader start -->
     
@@ -56,7 +54,7 @@
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="top-banner-wrapper">
-                                        <a href="#"><img src="{{asset('images/mega-menu/2.jpg')}}" class="img-fluid blur-up lazyload" alt=""></a>
+                                        <a href="#"><img src="{{ URL::to('/') }}/images/{{ $categorie->image1 }}" class="img-fluid blur-up lazyload" alt="" style="padding-left:300px ;"></a>
                                         <div class="top-banner-content small-section">
                                             <h4>{{$categorie->nom}}</h4>
                                             <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -77,10 +75,10 @@
                                                     <div class="product-box">
                                                         <div class="img-wrapper">
                                                             <div class="front">
-                                                                <a href="/produits"><img src="{{ URL::to('/') }}/images/{{ $produit->image }}" class="img-fluid blur-up lazyload bg-img" alt=""></a>
+                                                                <a href="/produits"><img src="{{ URL::to('/') }}/images/{{ $produit->image1 }}" class="img-fluid blur-up lazyload bg-img" alt=""></a>
                                                             </div>
                                                             <div class="back">
-                                                                <a href="/produits"><img src="{{ URL::to('/') }}/images/{{ $produit->image1 }}" class="img-fluid blur-up lazyload bg-img" alt=""></a>
+                                                                <a href="/produits"><img src="{{ URL::to('/') }}/images/{{ $produit->image2 }}" class="img-fluid blur-up lazyload bg-img" alt=""></a>
                                                             </div>
                                                             <div class="cart-info cart-wrap">
                                                                 <button data-toggle="modal" data-target="#addtocart" title="Add to cart"><i

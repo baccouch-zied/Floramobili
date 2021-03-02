@@ -8,9 +8,9 @@
     <meta name="description" content="Multikart admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Multikart admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="pixelstrap">
-    <link rel="icon" href="{{asset('images/dashboard/favicon.png')}}" type="image/x-icon">
-    <link rel="shortcut icon" href="{{asset('images/dashboard/favicon.png')}}" type="image/x-icon">
-    <title>Multikart - Premium Admin Template</title>
+    <link rel="icon" href="{{asset('images/favicon/icon1.png')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{asset('images/favicon/icon1.png')}}" type="image/x-icon">
+    <title>Administrateur</title>
 
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
@@ -42,6 +42,7 @@
         <!-- Page Sidebar Start-->
         @include('back.sidbar')
     </div>
+    <div class="page-body">
 
 
     <div class="container-fluid">
@@ -90,19 +91,19 @@
                                                     </select>
                                                 </div>
                                             <div class="form-group row">
-                                                <label for="validationCustom3" class="col-xl-3 col-md-4"><span>*</span>Image</label>
+                                                <label for="validationCustom3" class="col-xl-3 col-md-4"><span>*</span>Image (Taille:768px*1013px)</label>
                                                 <input class="form-control col-xl-8 col-md-7" id="image" name="image"type="file">
                                             </div>   
                                             <div class="form-group row">
-                                                <label for="validationCustom3" class="col-xl-3 col-md-4"><span>*</span>Image</label>
+                                                <label for="validationCustom3" class="col-xl-3 col-md-4"><span>*</span>Image1 (Taille:768px*1013px)</label>
                                                 <input class="form-control col-xl-8 col-md-7" id="image1" name="image1"type="file">
                                             </div>  
                                             <div class="form-group row">
-                                                <label for="validationCustom3" class="col-xl-3 col-md-4"><span>*</span>Image</label>
+                                                <label for="validationCustom3" class="col-xl-3 col-md-4"><span>*</span>Image2 (Taille:768px*1013px)</label>
                                                 <input class="form-control col-xl-8 col-md-7" id="image2" name="image2"type="file">
                                             </div>     
                                             <div class="form-group row">
-                                                <label for="validationCustom3" class="col-xl-3 col-md-4"><span>*</span>Image</label>
+                                                <label for="validationCustom3" class="col-xl-3 col-md-4"><span>*</span>Image3 (Taille:768px*1013px)</label>
                                                 <input class="form-control col-xl-8 col-md-7" id="image3" name="image3"type="file">
                                             </div>                                    
                                     </fieldset>  

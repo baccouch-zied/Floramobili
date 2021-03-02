@@ -58,7 +58,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #000000;
   text-align: left;
   background-color: #fff; }
 
@@ -346,10 +346,10 @@ h6, .h6 {
   line-height: 1.2; }
 
 hr {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1); }
+  border-top: 1px solid var(--theme-deafult); }
 
 small,
 .small {

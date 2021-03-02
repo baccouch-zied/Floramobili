@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head class="dark">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="multikart">
     <meta name="keywords" content="multikart">
     <meta name="author" content="multikart">
-    <link rel="icon" href="{{asset('images/favicon/5.png')}}" type="image/x-icon">
-    <link rel="shortcut icon" href="{{asset('images/favicon/5.png')}}" type="image/x-icon">
-    <title>Multikart - Multi-purpopse E-commerce Html Template</title>
+    <link rel="icon" href="{{asset('images/favicon/icon1.png')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{asset('images/favicon/icon1.png')}}" type="image/x-icon">
+    <title>FLORA MOBLIE</title>
 
     <!--Google font-->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
@@ -25,13 +25,11 @@
     <!-- Animate icon -->
     <link rel="stylesheet" type="text/css" href="{{asset('css/animate.css')}}">
 
-    <!-- Themify icon -->
     <link rel="stylesheet" type="text/css" href="{{asset('css/themify-icons.css')}}">
 
     <!-- Bootstrap css -->
     <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.css')}}">
 
-    <!-- Theme css -->
     <link rel="stylesheet" type="text/css" href="{{asset('css/color5.css')}}" media="screen" id="color">
 
 </head>
@@ -41,7 +39,7 @@ div.container {
 }
 </style>
 
-<body>
+<body class="dark">
 
     <!-- loader start -->
     
@@ -75,12 +73,12 @@ div.container {
     <section class="banner-furniture absolute_banner ratio3_2">
         <div class="container">
 
-            <div class="row partition3">
+            <div class="row partition3" style="padding-bottom: 20px;">
             @foreach($categories as $categorie)
 
                 <div class="col-md-4">
                     <a href="/categories/{{$categorie->id}}">
-                        <div class="collection-banner p-left text-left">
+                        <div class="collection-banner p-left text-left" style="padding-bottom: 20px;">
                             <img src="{{ URL::to('/') }}/images/{{ $categorie->image }}" alt=""
                                 class="img-fluid blur-up lazyload bg-img">
                             <div class="absolute-contain">

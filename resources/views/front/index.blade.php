@@ -8,8 +8,8 @@
     <meta name="description" content="multikart">
     <meta name="keywords" content="multikart">
     <meta name="author" content="multikart">
-    <link rel="icon" href="{{asset('images/favicon/5.png')}}" type="image/x-icon">
-    <link rel="shortcut icon" href="{{asset('images/favicon/5.png')}}" type="image/x-icon">
+    <link rel="icon" href="{{asset('images/favicon/icon1.png')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{asset('images/favicon/icon1.png')}}" type="image/x-icon">
     <title>FLORA MOBLIE</title>
 
     <!--Google font-->
@@ -25,18 +25,16 @@
     <!-- Animate icon -->
     <link rel="stylesheet" type="text/css" href="{{asset('css/animate.css')}}">
 
-    <!-- Themify icon -->
     <link rel="stylesheet" type="text/css" href="{{asset('css/themify-icons.css')}}">
 
     <!-- Bootstrap css -->
     <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.css')}}">
 
-    <!-- Theme css -->
     <link rel="stylesheet" type="text/css" href="{{asset('css/color5.css')}}" media="screen" id="color">
 
 </head>
 
-<body>
+<body class="dark">
 
     <!-- loader start -->
    @include('front.header')
@@ -155,13 +153,10 @@
     <!-- Quick-view modal popup end-->
 
 
+
     <!-- theme setting -->
     <a href="javascript:void(0)" onclick="openSetting()">
-        <div class="setting-sidebar" id="setting-icon">
-            <div>
-                <i class="fa fa-cog" aria-hidden="true"></i>
-            </div>
-        </div>
+ 
     </a>
        <!-- theme setting -->
 
@@ -202,7 +197,7 @@
 
     <!-- Theme js-->
     <script src="{{asset('js/script.js')}}"></script>
-
+  
     <script>
         $(window).on('load', function() {
             setTimeout(function() {

@@ -8,9 +8,9 @@
     <meta name="description" content="multikart">
     <meta name="keywords" content="multikart">
     <meta name="author" content="multikart">
-    <link rel="icon" href="{{asset('images/favicon/5.png')}}" type="image/x-icon">
-    <link rel="shortcut icon" href="{{asset('images/favicon/5.png')}}" type="image/x-icon">
-    <title>Multikart - Multi-purpopse E-commerce Html Template</title>
+    <link rel="icon" href="{{asset('images/favicon/icon1.png')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{asset('images/favicon/icon1.png')}}" type="image/x-icon">
+    <title>Administrateur</title>
 
     <!--Google font-->
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
@@ -48,6 +48,8 @@
         <!-- Page Sidebar Start-->
         @include('back.sidbar')
     </div>
+    <div class="page-body">
+
         <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-12">
@@ -81,7 +83,7 @@
                                     <td>{{$produit->prix}}</td>
                                     <td>{{$produit->categorie_id}}</td>
 
-                                    <td>{{$produit->description}}</td>
+                                    <td>{{ substr(strip_tags($produit->description), 0, 50) }}</td>
                                     <td>{{$produit->url}}</td>
 
                                     <td><img src="{{ URL::to('/') }}/images/{{ $produit->image }}" class="img-thumbnail" width="75" />
@@ -97,7 +99,7 @@
                                  <form method="POST" action="{{ route('produit.destroy', $produit->id) }}">   
                                          @csrf
                                   @method('DELETE')
-                                      <button type="submit" class="btn btn-primary">
+                                      <button type="submit" class="btn btn-primary servideletebtn">
                                       Supprimer
                                     </button>
                                     </form> 
@@ -124,7 +126,21 @@
     @include('back.footer')
 </div>
 
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
+
+<script>
+
+$(document).ready(function()){
+
+    $('.servideletebtn').click(function (e){
+
+        e.preventDefault();
+        alert('Hello');
+    });
+  
+});
+</script>
 
 
 

@@ -8,14 +8,7 @@
             <div class="row">
                 <div class="col">
                     <div class="theme-tab">
-                        <ul class="tabs tab-title">
-                        @foreach($categories as $categorie)
-
-                            <li class="current"><a href="{{$categorie->nom}}">{{$categorie->nom}}</a></li>
              
-                            @endforeach
-
-                        </ul>
                         <div class="tab-content-cls">
                             <div id="{{$categorie->nom}}" class="tab-content active default">
                                 <div class="no-slider row">
@@ -24,7 +17,7 @@
                                     <div class="product-box">
                                         <div class="img-wrapper">
                                             <div class="front">
-                                                <a href="/produits"><img src="{{ URL::to('/') }}/images/{{ $produit->image }}" class="img-fluid blur-up lazyload bg-img" alt=""></a>
+                                                <a href="/produits/{{$produit->id}}"><img src="{{ URL::to('/') }}/images/{{ $produit->image1 }}" class="img-fluid blur-up lazyload bg-img" alt=""></a>
                                             </div>
                                             <div class="cart-info cart-wrap">
                                                 <button data-toggle="modal" data-target="#addtocart" title="Add to cart"><i class="ti-shopping-cart"></i></button> <a href="javascript:void(0)" title="Add to Wishlist"><i
@@ -33,16 +26,12 @@
                                                         aria-hidden="true"></i></a></div>
                                         </div>
                                         <div class="product-detail">
-                                            <div class="rating"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></div>
-                                            <a href="/produit">
-                                                <h6>{{$produit->nom}}</h6>
+                                            <a href="/produits">
+                                            <hr>
+                                                <h4>{{$produit->nom}}</h4>
                                             </a>
-                                            <h4>{{$produit->prix}}</h4>
-                                            <ul class="color-variant">
-                                                <li class="bg-light0"></li>
-                                                <li class="bg-light1"></li>
-                                                <li class="bg-light2"></li>
-                                            </ul>
+                                            <h3>{{$produit->prix}}</h3>
+                                     
                                         </div>
                                     </div>
                                     @endforeach

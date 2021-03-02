@@ -8,9 +8,9 @@
     <meta name="description" content="multikart">
     <meta name="keywords" content="multikart">
     <meta name="author" content="multikart">
-    <link rel="icon" href="{{asset('images/favicon/5.png')}}" type="image/x-icon">
-    <link rel="shortcut icon" href="{{asset('images/favicon/5.png')}}" type="image/x-icon">
-    <title>Multikart - Multi-purpopse E-commerce Html Template</title>
+    <link rel="icon" href="{{asset('images/favicon/icon1.png')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{asset('images/favicon/icon1.png')}}" type="image/x-icon">
+    <title>Administrateur</title>
 
     <!--Google font-->
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
@@ -50,6 +50,7 @@
     </div>
 
 
+    <div class="page-body">
 
 
         <div class="container-fluid">
@@ -79,15 +80,15 @@
 
                                      <td>{{$categorie->id}}</td>
                                     <td>{{$categorie->nom}}</td>
-                                    <td>{{$categorie->description}}</td>
+                                    <td>{{ substr(strip_tags($categorie->description), 0, 50) }}</td>
                                     <td><img src="{{ URL::to('/') }}/images/{{ $categorie->image }}" class="img-thumbnail" width="75" />
                                     <img src="{{ URL::to('/') }}/images/{{ $categorie->image1 }}" class="img-thumbnail" width="75" />
                                     </td>
                                     <td>
                                  <a href="{{ route('categorie.edit', $categorie->id) }}" id="edit-user"  class="btn btn-warning" value="Edit">Modifier</a>
                                  <a href="{{ route('categorie.show', $categorie->id) }}" class="btn btn-dark">
-          Voir
-        </a>
+                                              Voir
+                                            </a>
                                  <form method="POST" action="{{ route('categorie.destroy', $categorie->id) }}">   
                                          @csrf
                                   @method('DELETE')
