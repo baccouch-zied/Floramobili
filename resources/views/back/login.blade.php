@@ -212,17 +212,9 @@
                                         <div class="form-group">
                                             <input required="" name="login[password]" type="password" class="form-control" placeholder="Confirm Password">
                                         </div>
-                                        <div class="form-terms">
-                                            <div class="custom-control custom-checkbox mr-sm-2">
-                                                <input type="checkbox" class="custom-control-input" id="customControlAutosizing1">
-                                                <label class="custom-control-label" for="customControlAutosizing1"><span>I agree all statements in <a href=""  class="pull-right">Terms &amp; Conditions</a></span></label>
-                                            </div>
-                                        </div>
-                                        <div class="form-button">
-                                            <button class="btn btn-primary" type="submit">Register</button>
-                                        </div>
+                               
                                         <div class="form-footer">
-                                            <span>Or Sign up with social platforms</span>
+                
                                             <ul class="social">
                                                 <li><a class="icon-facebook" href=""></a></li>
                                                 <li><a class="icon-twitter" href=""></a></li>

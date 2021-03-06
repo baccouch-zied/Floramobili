@@ -13,32 +13,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/','NewController@index');
 
-Route::get('/about', function () {
-    return view('front.about');
-});
 Route::get('/about','aboutController@index');
 Route::get('/NosCategories','nosCategoriesController@index');
-
-Route::get('/galleries','GalerieFrontController@index');
-Route::get('/faqs','FaqFrontController@index');
 
 
 Route::get('/categories','categoriesController@index');
 Route::get('/categories/{id}','categoriesController@affCategorie');
 
-
 Route::get('/produits','SeulProduit@index');
 Route::get('/produits/{id}','SeulProduit@affProduit');
 
+Route::get('/galleries','GalerieFrontController@index');
+Route::get('/faqs','FaqFrontController@index');
 
-/*Route::get('/contact', function () {
-    return view('front.contact');
-});*/
 Route::get('/contact','ContactController@index');
 Route::post('/contact','ContactController@store');
 
-Route::get('/','NewController@index');
 
 Route::get('/dash', function () {
     return view('back.index');
@@ -46,7 +38,7 @@ Route::get('/dash', function () {
 
 
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::group(['middleware' =>['auth','admin']], function(){

@@ -12,9 +12,9 @@ class NewController extends Controller
 {    
     public function index()
     {
-      $produits= produit::orderBy('created_at','desc')->paginate(4);
-      $categories= categorie::orderBy('created_at','desc')->paginate(3);
-      $sliders= slider::orderBy('created_at','desc')->paginate(5);
+      $produits= produit::all();
+      $categories= categorie::all();
+      $sliders= slider::all();
 
       return view('front.index',compact(['produits','categories','sliders']));
 

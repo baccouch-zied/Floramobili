@@ -55,7 +55,7 @@
                     <div class="col-sm-12">
                         <div class="card">
                             <div class="card-header">
-                                <h5>Products Category</h5>
+                                <h5>Produits</h5>
                             </div>
                             <div class="card-body">
                                 <div class="btn-popup pull-right">

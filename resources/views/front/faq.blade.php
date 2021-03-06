@@ -76,13 +76,13 @@
                         <div class="card">
                             <div class="card-header" id="headingSix">
                                 <h5 class="mb-0"><button class="btn btn-link collapsed" type="button"
-                                        data-toggle="collapse" data-target="{{$faq->question}}" aria-expanded="false"
-                                        aria-controls="collapseSix">{{$faq->question}}</button></h5>
+                                        data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
+                                        aria-controls="collapseSix">{{$faq->question ?? ''}}</button></h5>
                             </div>
-                            <div id="{{$faq->question}}" class="collapse" aria-labelledby="headingSix"
+                            <div id="#collapseSix" class="collapse" aria-labelledby="headingSix"
                                 data-parent="#accordionExample">
                                 <div class="card-body">
-                                    <p>{{$faq->reponse}}</p>
+                                    <p>{{$faq->reponse ?? ''}}</p>
                                 </div>
                             </div>
                         </div>

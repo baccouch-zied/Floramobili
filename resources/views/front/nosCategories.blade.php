@@ -73,10 +73,10 @@ div.container {
     <section class="banner-furniture absolute_banner ratio3_2">
         <div class="container">
 
-            <div class="row partition3" style="padding-bottom: 20px;">
+            <div class="row partition3">
             @foreach($categories as $categorie)
 
-                <div class="col-md-4">
+                <div class="col-md-4" style="padding-bottom: 50px;">
                     <a href="/categories/{{$categorie->id}}">
                         <div class="collection-banner p-left text-left" style="padding-bottom: 20px;">
                             <img src="{{ URL::to('/') }}/images/{{ $categorie->image }}" alt=""

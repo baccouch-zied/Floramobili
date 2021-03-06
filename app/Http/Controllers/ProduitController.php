@@ -172,7 +172,7 @@ class ProduitController extends Controller
             'nom'       =>   $request->nom,
             'prix'        =>   $request->prix,
             'description'        =>   $request->description,
-            'url'        =>   $request->description,
+            'url'        =>   $request->url,
 
             'image'            =>   $image_name,
             'image1'            =>   $image_name1,

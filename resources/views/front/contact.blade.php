@@ -129,11 +129,11 @@
                             </div>
                             <div class="col-md-6">
                                 <label for="email">Prenom</label>
-                                <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Prenom" required="">
+                                <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Entrer votre prenom" required="">
                             </div>
                             <div class="col-md-6">
                                 <label for="review">Telephone</label>
-                                <input type="text" class="form-control" id="telephone" name="telephone"  placeholder="Enter your number"
+                                <input type="text" class="form-control" id="telephone" name="telephone"  placeholder="Entrer votre tel"
                                     required="">
                             </div>
                             <div class="col-md-6">
@@ -142,11 +142,11 @@
                             </div>
                             <div class="col-md-12">
                                 <label for="review">Votre message</label>
-                                <textarea class="form-control" placeholder="Write Your Message"
+                                <textarea class="form-control" placeholder="Ecrit un  Message"
                                     id="exampleFormControlTextarea1" name="message" rows="6"></textarea>
                             </div>
                             <div class="col-md-12">
-                                <button class="btn btn-solid" type="submit">Send Your Message</button>
+                                <button class="btn btn-solid" type="submit">Envoyer votre Message</button>
                             </div>
                         </div>
                     </form>

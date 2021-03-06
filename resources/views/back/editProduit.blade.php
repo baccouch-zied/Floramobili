@@ -50,7 +50,7 @@
                     <div class="col-sm-12">
                         <div class="card tab2-card">
                             <div class="card-header">
-                                <h5> Add produit</h5>
+                                <h5> Modifier produit</h5>
                             </div>
                             <div class="card-body">
                               
@@ -64,7 +64,7 @@
 
                             <fieldset>
 
-                                            <h4>Product Details</h4>
+                                            <h4>Produit</h4>
                                             <div class="form-group row">
                                                 <label for="validationCustom0" class="col-xl-3 col-md-4"><span>*</span> Nom </label>
                                                 <input class="form-control col-xl-8 col-md-7" id="nom" name="nom" type="text" required="" value="{{$produit->nom}}">

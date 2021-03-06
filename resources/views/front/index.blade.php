@@ -53,14 +53,14 @@
 
             <div>
                 <div class="home text-left">
-                    <img src="{{ URL::to('/') }}/images/{{ $slider->image }}"  alt="" class="bg-img blur-up lazyload">
+                    <img src="{{ URL::to('/') }}/images/{{ $slider->image ?? ''}}"  alt="" class="bg-img blur-up lazyload">
                     <div class="container">
                         <div class="row">
                             <div class="col">
                                 <div class="slider-contain">
                                     <div>
-                                        <h4>{{$slider->soutitre}}</h4>
-                                        <h1>{{$slider->titre}}</h1><a href="/NosCategories" class="btn btn-solid">Voir Plus</a>
+                                        <h4>{{$slider->soutitre ?? ''}}</h4>
+                                        <h1>{{$slider->titre ?? ''}}</h1><a href="/NosCategories" class="btn btn-solid">Voir Plus</a>
                                     </div>
                                 </div>
                             </div>
@@ -87,12 +87,12 @@
                     <a href="#">
                         <div class="collection-banner p-right text-right">
                             <div class="img-part">
-                                <img src="{{ URL::to('/') }}/images/{{ $categorie->image1 }}" alt="" class="img-fluid blur-up lazyload bg-img">
+                                <img src="{{ URL::to('/') }}/images/{{ $categorie->image1 ?? ''}}" alt="" class="img-fluid blur-up lazyload bg-img">
                             </div>
                             <div class="contain-banner banner-3">
                                 <div>
-                                    <h4>{{$categorie->nom}}</h4>
-                                    <h2>{{$categorie->nom}}</h2>
+                                    <h4>{{$categorie->nom ?? ''}}</h4>
+                                    <h2>{{$categorie->nom ?? ''}}</h2>
                                 </div>
                             </div>
                         </div>
@@ -108,8 +108,54 @@
 
 
     <!-- Tab product -->
-  @include('front.newproduits')
-    
+    <div name="new" class="title1 section-t-space">
+        <h4>produit exclusive</h4>
+        <h2 class="title-inner1">Nouveaux Produits</h2>
+    </div>
+
+<section class="section-b-space p-t-0 ratio_asos">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="theme-tab">
+             
+                        <div class="tab-content-cls">
+                            <div id="{{$categorie->nom}}" class="tab-content active default">
+                                <div class="no-slider row">
+                                @foreach($produits as $produit)
+
+                                    <div class="product-box">
+                                        <div class="img-wrapper">
+                                            <div class="front">
+                                                <a href="/produits/{{$produit->id}}"><img src="{{ URL::to('/') }}/images/{{ $produit->image1 ?? ''}}" class="img-fluid blur-up lazyload bg-img" alt=""></a>
+                                            </div>
+                                            <div class="cart-info cart-wrap">
+                                                <button data-toggle="modal" data-target="#addtocart" title="Add to cart"><i class="ti-shopping-cart"></i></button> <a href="javascript:void(0)" title="Add to Wishlist"><i
+                                                        class="ti-heart" aria-hidden="true"></i></a> <a href="#" data-toggle="modal" data-target="#quick-view" title="Quick View"><i
+                                                        class="ti-search" aria-hidden="true"></i></a> <a href="compare.html" title="Compare"><i class="ti-reload"
+                                                        aria-hidden="true"></i></a></div>
+                                        </div>
+                                        <div class="product-detail">
+                                            <a href="/produits">
+                                            <hr>
+                                                <h4>{{$produit->nom ?? ''}}</h4>
+                                            </a>
+                                            <h3>{{$produit->prix ?? ''}}</h3>
+                                     
+                                        </div>
+                                    </div>
+                                    @endforeach
+
+                                                                                                                                                                     
+                                </div>
+                            </div>
+ 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
     <!-- Tab product end -->
 
 
@@ -134,8 +180,26 @@
 
 
     <!-- blog section -->
-    @include('front.instagram')
-    <!-- blog section end-->
+    <section class="instagram ratio_square">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 p-0">
+                    <h2 class="title-borderless"># instagram</h2>
+
+<!-- SnapWidget -->
+<!-- SnapWidget -->
+<!-- SnapWidget -->
+<!-- SnapWidget -->
+<iframe src="https://snapwidget.com/embed/919080" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:1560px; height:260px"></iframe><!-- SnapWidget -->
+<!-- SnapWidget -->
+                       
+                       
+                       
+                        
+                </div>
+            </div>
+        </div>
+    </section>    <!-- blog section end-->
 
 
     <!-- footer -->

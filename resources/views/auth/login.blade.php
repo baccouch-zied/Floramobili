@@ -52,7 +52,7 @@
                 <div class="col-md-5 p-0 card-left">
                     <div class="card bg-primary">
                         <div class="svg-icon">
-                        <a href="#"> <img src="{{asset('images/icon/test.png')}}"
+                        <a href="#"> <img src="{{asset('images/icon/mo.png')}}"
                                         class="img-fluid blur-up lazyload" alt=""></a>
                         </div>
                        
@@ -104,25 +104,13 @@
                                             <div class="custom-control custom-checkbox mr-sm-2">
                                                 <input class="custom-control-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }} >
                                                 <label class="custom-control-label" for="customControlAutosizing">Remember me</label>
-                                                @if (Route::has('password.request'))
-                                    <a class="btn btn-default forgot-pass" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
-                                    </a>
-                                      @endif
+                          
                                             </div>
                                         </div>
                                         <div class="form-button">
                                             <button class="btn btn-primary" type="submit">{{ __('Login') }}</button>
                                         </div>
-                                        <div class="form-footer">
-                                            <span>Or Login up with social platforms</span>
-                                            <ul class="social">
-                                                <li><a class="icon-facebook" href=""></a></li>
-                                                <li><a class="icon-twitter" href=""></a></li>
-                                                <li><a class="icon-instagram" href=""></a></li>
-                                                <li><a class="icon-pinterest" href=""></a></li>
-                                            </ul>
-                                        </div>
+                              
                                     </form>
                                 </div>
                             

@@ -54,14 +54,12 @@
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="top-banner-wrapper">
-                                        <a href="#"><img src="{{ URL::to('/') }}/images/{{ $categorie->image1 }}" class="img-fluid blur-up lazyload" alt="" style="padding-left:300px ;"></a>
+                                        <a href="#"><img src="{{ URL::to('/') }}/images/{{ $categorie->image1 ?? ''}}" class="img-fluid blur-up lazyload" alt="" style="padding-left:300px ;"></a>
                                         <div class="top-banner-content small-section">
-                                            <h4>{{$categorie->nom}}</h4>
+                                            <h4>{{$categorie->nom ?? ''}}</h4>
                                             <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                             </h5>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
-                                                it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
-                                                of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                            <p>{{$categorie->description ?? ''}}</p>
                                         </div>
                                     </div>
                                     <div class="collection-product-wrapper">
@@ -75,10 +73,10 @@
                                                     <div class="product-box">
                                                         <div class="img-wrapper">
                                                             <div class="front">
-                                                                <a href="/produits"><img src="{{ URL::to('/') }}/images/{{ $produit->image1 }}" class="img-fluid blur-up lazyload bg-img" alt=""></a>
+                                                                <a href="/produits/{{$produit->id}}"><img src="{{ URL::to('/') }}/images/{{ $produit->image1 ?? ''}}" class="img-fluid blur-up lazyload bg-img" alt=""></a>
                                                             </div>
                                                             <div class="back">
-                                                                <a href="/produits"><img src="{{ URL::to('/') }}/images/{{ $produit->image2 }}" class="img-fluid blur-up lazyload bg-img" alt=""></a>
+                                                                <a href="/produits/{{$produit->id}}"><img src="{{ URL::to('/') }}/images/{{ $produit->image2 ?? ''}}" class="img-fluid blur-up lazyload bg-img" alt=""></a>
                                                             </div>
                                                             <div class="cart-info cart-wrap">
                                                                 <button data-toggle="modal" data-target="#addtocart" title="Add to cart"><i
@@ -92,7 +90,7 @@
                                                             <div>
                                                                 <div class="rating"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></div>
                                                                 <a href="product-page(no-sidebar).html">
-                                                                    <h6>{{$produit->nom}}</h6>
+                                                                    <h6>{{$produit->nom ?? ''}}</h6>
                                                                 </a>
                                                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
                                                                     of type and scrambled it to make a type specimen book</p>
