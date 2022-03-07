@@ -62,7 +62,7 @@
 
                                         @csrf
 
-                            <fieldset>
+                                     <fieldset>
 
                                             <h4>Product Details</h4>
                                             <div class="form-group row">
@@ -93,32 +93,32 @@
                                             <div class="form-group row">
                                                 <label for="validationCustom3" class="col-xl-3 col-md-4"><span>*</span>Image (Taille:768px*1013px)</label>
                                                 <input class="form-control col-xl-8 col-md-7" id="image" name="image"type="file">
-                                            </div>   
+                                            </div>
                                             <div class="form-group row">
                                                 <label for="validationCustom3" class="col-xl-3 col-md-4"><span>*</span>Image1 (Taille:768px*1013px)</label>
                                                 <input class="form-control col-xl-8 col-md-7" id="image1" name="image1"type="file">
-                                            </div>  
+                                            </div>
                                             <div class="form-group row">
                                                 <label for="validationCustom3" class="col-xl-3 col-md-4"><span>*</span>Image2 (Taille:768px*1013px)</label>
                                                 <input class="form-control col-xl-8 col-md-7" id="image2" name="image2"type="file">
-                                            </div>     
+                                            </div>
                                             <div class="form-group row">
                                                 <label for="validationCustom3" class="col-xl-3 col-md-4"><span>*</span>Image3 (Taille:768px*1013px)</label>
                                                 <input class="form-control col-xl-8 col-md-7" id="image3" name="image3"type="file">
-                                            </div>                                    
-                                    </fieldset>  
+                                            </div>
+                                    </fieldset>
                                     <div class="form-group">
 			                                  <label class="col-md-4 control-label" for="submit"></label>
 			                                 <div class="col-md-4">
                                              <button id="submit" name="submit" class="btn btn-primary">Save</button>
                                             </div>
-                                             </div>  
-                                    </div>   
+                                             </div>
+                                    </div>
                                         </form>
-                        
-                                   
+
+
                                 </div>
-                                              
+
                             </div>
                         </div>
                     </div>

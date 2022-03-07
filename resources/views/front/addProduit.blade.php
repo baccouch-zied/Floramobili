@@ -50,71 +50,67 @@
                     <div class="col-sm-12">
                         <div class="card tab2-card">
                             <div class="card-header">
-                                <h5> Modifier produit</h5>
+                                <h5> Add produit</h5>
                             </div>
                             <div class="card-body">
-                              
+                                <ul class="nav nav-tabs tab-coupon" id="myTab" role="tablist">
+                                    <li class="nav-item"><a class="nav-link active show" id="account-tab" data-toggle="tab" href="#account" role="tab" aria-controls="account" aria-selected="true" data-original-title="" title="">Ajouter Produit</a></li>
+                                </ul>
                                 <div class="tab-content" id="myTabContent">
                                     <div class="tab-pane fade active show" id="account" role="tabpanel" aria-labelledby="account-tab">
-                                        <form class="needs-validation user-add" method="POST" action="{{ route('produit.update',$produit->id) }}"  enctype="multipart/form-data">
+                                        <form class="needs-validation user-add" method="POST" action="{{ route('produit.store') }}"  enctype="multipart/form-data">
 
                                         @csrf
-                                        @method('PUT')
-
 
                             <fieldset>
 
-                                            <h4>Produit</h4>
+                                            <h4>Product Details</h4>
                                             <div class="form-group row">
                                                 <label for="validationCustom0" class="col-xl-3 col-md-4"><span>*</span> Nom </label>
-                                                <input class="form-control col-xl-8 col-md-7" id="nom" name="nom" type="text" required="" value="{{$produit->nom}}">
+                                                <input class="form-control col-xl-8 col-md-7" id="nom" name="nom" type="text" required="">
                                             </div>
                                             <div class="form-group row">
                                                 <label for="validationCustom1" class="col-xl-3 col-md-4"><span>*</span>Prix</label>
-                                                <input class="form-control col-xl-8 col-md-7" id="prix" name="prix" type="text" required="" value="{{$produit->prix}}">
+                                                <input class="form-control col-xl-8 col-md-7" id="prix" name="prix" type="text" required="">
                                             </div>
-
-
                                             <div class="form-group row">
                                                 <label for="validationCustom2" class="col-xl-3 col-md-4"><span>*</span> Description</label>
-                                                <input class="form-control col-xl-8 col-md-7" id="description" name="description" type="text" required="" value="{{$produit->description}}">
+                                                <input class="form-control col-xl-8 col-md-7" id="description" name="description" type="text" required="">
                                             </div>
                                             <div class="form-group row">
-                                                <label for="validationCustom1" class="col-xl-3 col-md-4"><span>*</span>Url</label>
-                                                <input class="form-control col-xl-8 col-md-7" id="url" name="url" type="text" required="" value="{{$produit->url}}">
+                                                <label for="validationCustom2" class="col-xl-3 col-md-4"><span>*</span> Url</label>
+                                                <input class="form-control col-xl-8 col-md-7" id="url" name="url" type="text" required="">
                                             </div>
+                                            <div class="form-group row">
+                                                    <label for="exampleFormControlSelect1" class="col-xl-3 col-sm-4 mb-0">Select categorie :</label>
+                                                    <select class="form-control digits col-xl-8 col-sm-7" id="exampleFormControlSelect1" name="categorie">
+                                                    @foreach($categories as $categorie)
+                                                        <option value="{{$categorie->id}}">{{$categorie->nom}}</option>
+                                                        @endforeach
 
-                                            
-
+                                                    </select>
+                                                </div>
                                             <div class="form-group row">
                                                 <label for="validationCustom3" class="col-xl-3 col-md-4"><span>*</span>Image (Taille:768px*1013px)</label>
-                                                <input class="form-control col-xl-8 col-md-7" id="image" name="image" type="file">
-                                                <img src="{{ URL::to('/') }}/images/{{ $produit->image }}" class="img-thumbnail" width="100" />
-                                                 <input type="hidden" name="hidden_image" value="{{ $produit->image }}" />
-                                            </div>    
+                                                <input class="form-control col-xl-8 col-md-7" id="image" name="image"type="file">
+                                            </div>   
                                             <div class="form-group row">
-                                                <label for="validationCustom3" class="col-xl-3 col-md-4"><span>*</span>Image 1 (Taille:768px*1013px)</label>
-                                                <input class="form-control col-xl-8 col-md-7" id="image1" name="image1" type="file">
-                                                <img src="{{ URL::to('/') }}/images/{{ $produit->image1 }}" class="img-thumbnail" width="100" />
-                                                 <input type="hidden" name="hidden_image" value="{{ $produit->image1 }}" />
+                                                <label for="validationCustom3" class="col-xl-3 col-md-4"><span>*</span>Image1 (Taille:768px*1013px)</label>
+                                                <input class="form-control col-xl-8 col-md-7" id="image1" name="image1"type="file">
                                             </div>  
                                             <div class="form-group row">
-                                                <label for="validationCustom3" class="col-xl-3 col-md-4"><span>*</span>Image 2 (Taille:768px*1013px)</label>
-                                                <input class="form-control col-xl-8 col-md-7" id="image2" name="image2" type="file">
-                                                <img src="{{ URL::to('/') }}/images/{{ $produit->image2 }}" class="img-thumbnail" width="100" />
-                                                 <input type="hidden" name="hidden_image" value="{{ $produit->image2 }}" />
-                                            </div>  
+                                                <label for="validationCustom3" class="col-xl-3 col-md-4"><span>*</span>Image2 (Taille:768px*1013px)</label>
+                                                <input class="form-control col-xl-8 col-md-7" id="image2" name="image2"type="file">
+                                            </div>     
                                             <div class="form-group row">
-                                                <label for="validationCustom3" class="col-xl-3 col-md-4"><span>*</span>Image 3 (Taille:768px*1013px)</label>
-                                                <input class="form-control col-xl-8 col-md-7" id="image3" name="image3" type="file">
-                                                <img src="{{ URL::to('/') }}/images/{{ $produit->image3 }}" class="img-thumbnail" width="100" />
-                                                 <input type="hidden" name="hidden_image" value="{{ $produit->image3 }}" />
-                                            </div>                                     
+                                                <label for="validationCustom3" class="col-xl-3 col-md-4"><span>*</span>Image3 (Taille:768px*1013px)</label>
+                                                <input class="form-control col-xl-8 col-md-7" id="image3" name="image3"type="file">
+                                            </div>                                    
                                     </fieldset>  
                                     <div class="form-group">
 			                                  <label class="col-md-4 control-label" for="submit"></label>
 			                                 <div class="col-md-4">
-                                             <button id="submit" name="submit" class="btn btn-primary">Modifier</button>
+                                             <button id="submit" name="submit" class="btn btn-primary">Save</button>
                                             </div>
                                              </div>  
                                     </div>   

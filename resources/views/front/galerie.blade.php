@@ -37,7 +37,7 @@
 <body class="dark">
 
     <!-- loader start -->
-    
+
     <!-- loader end -->
 
 
@@ -92,12 +92,58 @@
                 </div>
                 @endforeach
 
-              
+
             </div>
         </div>
     </section>
 
     @include('front.footer')
+
+
+
+
+    <script src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
+
+    <!-- portfolio js -->
+    <script src="{{asset('js/jquery.magnific-popup.js')}}"></script>
+    <script src="{{asset('js/zoom-gallery.js')}}"></script>
+
+    <!-- menu js-->
+    <script src="{{asset('js/menu.js')}}"></script>
+
+    <!-- lazyload js-->
+    <script src="{{asset('js/lazysizes.min.js')}}"></script>
+
+    <!-- popper js-->
+    <script src="{{asset('js/popper.min.js')}}"></script>
+
+    <!-- slick js-->
+    <script src="{{asset('js/slick.js')}}"></script>
+
+    <!-- Bootstrap js-->
+    <script src="{{asset('js/bootstrap.js')}}"></script>
+
+    <!-- Bootstrap Notification js-->
+    <script src="{{asset('js/bootstrap-notify.min.js')}}"></script>
+
+    <!-- Theme js-->
+    <script src="{{asset('js/script.js')}}"></script>
+
+
+
+    <script>
+
+        function openSearch() {
+            document.getElementById("search-overlay").style.display = "block";
+        }
+
+        function closeSearch() {
+            document.getElementById("search-overlay").style.display = "none";
+        }
+
+
+    </script>
+
 
 <div class="tap-top">
     <div><i class="fa fa-angle-double-up"></i></div>
@@ -106,6 +152,7 @@
 
 
 <!-- latest jquery-->
+
 <script src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
 
 
